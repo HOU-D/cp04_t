@@ -1,10 +1,10 @@
-NAME = a.out
+NAME =  fire
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 CPP = c++
 
-SRC = main.cpp 
+SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
