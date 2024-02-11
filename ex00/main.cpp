@@ -6,7 +6,7 @@
 /*   By: hoakoumi <hoakoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:25:23 by hoakoumi          #+#    #+#             */
-/*   Updated: 2024/02/11 14:17:34 by hoakoumi         ###   ########.fr       */
+/*   Updated: 2024/02/11 22:29:43 by hoakoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int main()
     std::cout << "Sound wrong animal is : " ;
     P->makeSound();
     std::cout << std::endl;
-    
+    std::cout << j->gettype() << std::endl;
 
     
     delete j;
@@ -59,7 +59,7 @@ int main()
     delete meta;
     std::cout << std::endl;
    
-    system("leaks Polymorphism");
+   // system("leaks Polymorphism");
     
     return 0;
 }

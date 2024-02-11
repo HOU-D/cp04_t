@@ -44,6 +44,7 @@ Cat& Cat::operator = (const Cat& other)
         return (*this);
 
     type = other.type;
+    
     if (brain)
         delete brain;
 

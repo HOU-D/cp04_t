@@ -6,47 +6,58 @@
 /*   By: hoakoumi <hoakoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:25:25 by hoakoumi          #+#    #+#             */
-/*   Updated: 2024/02/10 22:33:26 by hoakoumi         ###   ########.fr       */
+/*   Updated: 2024/02/11 21:52:34 by hoakoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 #include "Dog.hpp"
 
-void    f(int N)
+void f(int N)
 {
-    Animal **a = new Animal*[N];
+    Animal **a = new Animal*[N];    
     int i = 0;
     int j;
 
     j = 1;
-    for(; i < N/2; i++)
+    while (i < N/2)
     {
         std::cout << "[" << j << "] ";
         a[i] = new Dog();
+        std::cout << std::endl;
         j++;
+        i++;
     }
+    std::cout << std::endl;
+    
     j = 1;
-    for(; i < N ; i++)
+    while (i < N)
     {
         std::cout << "[" << j << "] ";
         a[i] = new Cat();
+        std::cout << std::endl;
         j++;
+        i++;
     }
+
     std::cout << std::endl;
 
-    //* print sounds the animals *//
-    for (int i = 0; i < N ; i++)
+    // Print sounds the animals //
+    i = 0;
+    while (i < N)
     {
         a[i]->makeSound();
         delete a[i];
-    }
+        std::cout << std::endl;
+        i++;
+    }    
     delete []a;
 }
 
+
 int main()
 {
-    int N = 2;
+    int N = 8;
 
     f(N);
     return 0;
