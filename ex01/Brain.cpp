@@ -6,7 +6,7 @@
 /*   By: hoakoumi <hoakoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:50:13 by hoakoumi          #+#    #+#             */
-/*   Updated: 2024/02/11 15:10:11 by hoakoumi         ###   ########.fr       */
+/*   Updated: 2024/02/11 22:43:02 by hoakoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 Brain::Brain()
 {
+    std::cout << "Brain: Default constructor called" << std::endl;
+    
     int i = 0;
     
     while(i < 100)
@@ -21,8 +23,7 @@ Brain::Brain()
         ideas[i] = "idea";
         i++;
     }
-    
-    std::cout << "Brain: Default constructor called" << std::endl;
+
 }
  
 Brain::~Brain()

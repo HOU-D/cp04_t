@@ -6,7 +6,7 @@
 /*   By: hoakoumi <hoakoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:36:03 by hoakoumi          #+#    #+#             */
-/*   Updated: 2024/02/11 13:54:38 by hoakoumi         ###   ########.fr       */
+/*   Updated: 2024/02/11 22:44:59 by hoakoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 Dog::Dog()
 {
-    type = "Dog";
     std::cout << "Dog:    Default constructor called" << std::endl;
+    type = "Dog"; 
 }
 
 
@@ -27,6 +27,7 @@ Dog::~Dog()
 Dog& Dog::operator = (const Dog& other)
 {
     std::cout << "Dog: copy assignment operator" << std::endl;
+    
     type = other.type;
     return (*this);
 }

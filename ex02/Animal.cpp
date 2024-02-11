@@ -6,7 +6,7 @@
 /*   By: hoakoumi <hoakoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:56:13 by hoakoumi          #+#    #+#             */
-/*   Updated: 2024/02/11 19:37:31 by hoakoumi         ###   ########.fr       */
+/*   Updated: 2024/02/11 22:46:34 by hoakoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 Animal::Animal()
 {
-    type = "Alex";
     std::cout << "Animal: Default constructor called" << std::endl;
+    
+    type = "Alex";
 }
 
 Animal::~Animal()
@@ -26,12 +27,14 @@ Animal::~Animal()
 Animal::Animal(const Animal& other)
 {
     std::cout << "Animal: copy constructor" << std::endl;
+    
     *this = other;
 }
 
 Animal& Animal::operator = (const Animal& other)
 {
     std::cout << "Animal: copy assignment operator" << std::endl;
+    
     type = other.type;
     return (*this);
 }

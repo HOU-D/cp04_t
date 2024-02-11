@@ -6,7 +6,7 @@
 /*   By: hoakoumi <hoakoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:27:21 by hoakoumi          #+#    #+#             */
-/*   Updated: 2024/02/11 13:45:41 by hoakoumi         ###   ########.fr       */
+/*   Updated: 2024/02/11 22:44:20 by hoakoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 Animal::Animal()
 {
-    type = "Alex";
     std::cout << "Animal: Default constructor called" << std::endl;
+    type = "Alex";
 }
 
 Animal::~Animal()

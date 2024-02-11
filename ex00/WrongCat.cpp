@@ -6,7 +6,7 @@
 /*   By: hoakoumi <hoakoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:40:33 by hoakoumi          #+#    #+#             */
-/*   Updated: 2024/02/11 14:23:35 by hoakoumi         ###   ########.fr       */
+/*   Updated: 2024/02/11 22:45:27 by hoakoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ WrongCat::~WrongCat()
 WrongCat::WrongCat(WrongCat & ref)
 {
 	std::cout << "A cat was constructed from copy\n";
+	
 	this->type = ref.getType();
 }
 
