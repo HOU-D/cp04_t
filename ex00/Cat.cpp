@@ -6,7 +6,7 @@
 /*   By: hoakoumi <hoakoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:36:26 by hoakoumi          #+#    #+#             */
-/*   Updated: 2024/02/11 22:44:42 by hoakoumi         ###   ########.fr       */
+/*   Updated: 2024/02/12 15:42:09 by hoakoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 Cat::Cat()
 {
     std::cout << "Cat:    Default constructor called" << std::endl;
+    
     type = "Cat";
 }
 

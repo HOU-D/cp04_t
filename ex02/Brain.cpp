@@ -39,7 +39,7 @@ Brain& Brain::operator = (const Brain& other)
 
     while(i < 100)
     {
-        this->ideas[i] = "stolen " + other.ideas[i];
+        this->ideas[i] =  other.ideas[i];
         i++;
     }
 

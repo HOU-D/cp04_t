@@ -6,7 +6,7 @@
 /*   By: hoakoumi <hoakoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:50:13 by hoakoumi          #+#    #+#             */
-/*   Updated: 2024/02/11 22:43:02 by hoakoumi         ###   ########.fr       */
+/*   Updated: 2024/02/12 19:18:52 by hoakoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ Brain& Brain::operator = (const Brain& other)
     
     while(i < 100)
     {
-        this->ideas[i] = "stolen " + other.ideas[i];
+        this->ideas[i] =  other.ideas[i];
         i++;
     }
 
@@ -56,7 +56,8 @@ Brain::Brain(const Brain& other)
 std::string Brain::getIdea(int index) const
 {
     std::string idea;
-
+    
+    std::cout << idea;
     if (index < 0 || index >= 100)
         return idea;
 

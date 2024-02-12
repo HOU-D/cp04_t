@@ -6,7 +6,7 @@
 /*   By: hoakoumi <hoakoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:25:23 by hoakoumi          #+#    #+#             */
-/*   Updated: 2024/02/11 22:29:43 by hoakoumi         ###   ########.fr       */
+/*   Updated: 2024/02/12 15:47:20 by hoakoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,11 @@ int main()
     const WrongAnimal *P = new WrongCat();
      std::cout << std::endl;
     
+    std::cout << meta->gettype() << " " << std::endl;
     std::cout << j->gettype() << " " << std::endl;
     std::cout << i->gettype() << " " << std::endl;
     std::cout << P->getType() << " " << std::endl;
-     std::cout << std::endl;
+    std::cout << std::endl;
      
     std::cout << "Sound Cat is : " ;
     i->makeSound();
@@ -44,9 +45,7 @@ int main()
     std::cout << "Sound wrong animal is : " ;
     P->makeSound();
     std::cout << std::endl;
-    std::cout << j->gettype() << std::endl;
 
-    
     delete j;
     std::cout << std::endl;
 

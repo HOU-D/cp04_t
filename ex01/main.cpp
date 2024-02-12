@@ -6,7 +6,7 @@
 /*   By: hoakoumi <hoakoumi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:25:25 by hoakoumi          #+#    #+#             */
-/*   Updated: 2024/02/11 21:52:34 by hoakoumi         ###   ########.fr       */
+/*   Updated: 2024/02/12 19:37:50 by hoakoumi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 
 void f(int N)
 {
-    Animal **a = new Animal*[N];    
+    Animal **a = new Animal*[N];   
+
+
     int i = 0;
     int j;
 
@@ -58,7 +60,13 @@ void f(int N)
 int main()
 {
     int N = 8;
+    Dog p;
+    Dog n(p);
+    std::cout << p.gettype() <<  std::endl;
+    
+//    std::cout << l.gettype()<<std::endl;
 
     f(N);
+   
     return 0;
 }

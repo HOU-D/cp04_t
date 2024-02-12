@@ -28,7 +28,7 @@ Cat::~Cat()
     delete brain;
 }
 
-Cat::Cat(const Cat& other) : Animal()
+Cat::Cat(const Cat& other)
 {
     std::cout << "Cat: copy constructor" << std::endl;
 
@@ -40,13 +40,13 @@ Cat& Cat::operator = (const Cat& other)
 {
     std::cout << "Cat: copy assignment operator" << std::endl;
 
-    if (this == &other)
-        return (*this);
+    // if (this == &other)
+    //     return (*this);
 
     type = other.type;
     
-    if (brain)
-        delete brain;
+    // if (brain)
+    //     delete brain;
 
     brain = new Brain();
 
